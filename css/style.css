@@ -1,11 +1,14 @@
 
+/* Google fonts */
+@import url( );
+
 /* Definir cores tema Dark */
 :root,
 :root[data-theme="dark"] {
 
     --bg-body:#222;
     --cor-texto: #eee;
-
+    
     --bg-header: #222;
     --icone-tema: #eee;
     
@@ -35,6 +38,10 @@ body {
     color: var(--cor-texto);/* cor do texto */
 }
 
+h1 {
+    font-size: 60px;
+}
+
 i {
     color: yellow;
     font-size: 20px; /* tamanho do texto */
@@ -46,7 +53,7 @@ i {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background: #222;
+    background: var(--bg-body);
     padding: 8px 16px;
     z-index: 2;
 }
@@ -54,7 +61,7 @@ i {
 .menu {
     display: flex;
     align-items: center;
-    background: #222; /* cor do fundo */
+    background:var(--bg-body); /* cor do fundo */
     gap: 20px;  
     list-style: none;
 }
@@ -147,7 +154,7 @@ icoen = icone do Bootstrap <i> */
         position: fixed;
         border-bottom: 1px solid #f3f3f3;
         padding: 16px 80px;
-        background: #222;
+        background: var(--bg-body);
     }
     .nav-mobile {
         display: none;
