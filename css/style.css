@@ -300,6 +300,37 @@ a {
     aspect-ratio: 16/9;
 }
 
+/* SOBRE */
+.sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.sobre-content1,
+.sobre-content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 32px;
+}
+
+.sobre-perfil {
+    width: 100%;
+    pointer-events: none;
+    border-radius: 50%;
+    border: 8px solid var(--cor-borda);
+    object-fit: cover;
+    object-position: center;
+}
+
+.sobre-dscricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
 
 /* CSS Responsivo */
 @media (min-width: 768px) { /* a partir de: 768px */
